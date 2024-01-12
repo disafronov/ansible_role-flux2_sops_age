@@ -119,6 +119,7 @@
               --author-email "{{ flux_email | mandatory }}"
               --components-extra=image-reflector-controller,image-automation-controller
               --silent
+      changed_when: false
 
     - name: Remove temporary directory for operations
       ansible.builtin.file:
