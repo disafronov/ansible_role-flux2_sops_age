@@ -63,7 +63,7 @@
           type: Opaque
           stringData:
             age.agekey: |
-              {{ age_key }}
+              {{ age_key | mandatory }}
         state: present
         apply: true
 
@@ -84,7 +84,7 @@
       ansible.builtin.copy:
         content: |
           # SSH private key
-          {{ flux_ssh }}
+          {{ flux_ssh | mandatory }}
         dest: "{{ tempdir_1.path }}/ssh_key"
         mode: "0600"
 
