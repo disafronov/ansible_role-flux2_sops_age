@@ -1,0 +1,9 @@
+collections: []
+dependencies: []
+galaxy_info:
+  author: Dmitriy Safronov
+  description: Bootstrap FluxCD2 with Mozilla SOPS and AGE key into Kubernetes.
+  license: Apache-2.0
+  min_ansible_version: "2.16"
+  namespace: dmitriysafronov
+  role_name: flux2_sops_age
