@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2025-04-13
+
+### 🚀 Features
+
+- *(!)* Pip2apt
+
 ## [1.1.0] - 2024-09-03
 
 ### 🚀 Features
