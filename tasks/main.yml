@@ -1,20 +1,14 @@
 ---
 
-- name: Install pip3 system package
+- name: Install [kubernetes] Ansible module requirements using system package manager
   become: true
   ansible.builtin.package:
-    name: python3-pip
+    name: python3-kubernetes
     state: present
 
 - name: Unprivileged tasks
   become: false
   block:
-
-    - name: Install kubernetes support python user package
-      ansible.builtin.pip:
-        name: kubernetes
-        state: present
-        extra_args: --user
 
     - name: Download flux x64
       when: ansible_facts.architecture == "x86_64"
